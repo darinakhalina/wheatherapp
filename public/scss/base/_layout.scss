@@ -1,0 +1,181 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../fontello/font/fontello.eot?71261218');
+  src: url('../fontello/font/fontello.eot?71261218#iefix') format('embedded-opentype'),
+       url('../fontello/font/fontello.woff2?71261218') format('woff2'),
+       url('../fontello/font/fontello.woff?71261218') format('woff'),
+       url('../fontello/font/fontello.ttf?71261218') format('truetype'),
+       url('../fontello/font/fontello.svg?71261218#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+ [class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  font-size: 24px;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  /* opacity: .8; */
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* you can be more comfortable with increased icons size */
+  /* font-size: 120%; */
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Uncomment for 3D effect */
+  /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.icon-twitter:before { content: '\f099'; } /* '' */
+.icon-facebook:before { content: '\f09a'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
+
+
+@font-face {
+    font-family: 'ubuntu700';
+    src: url('../fonts/ubuntu-bold-webfont.eot');
+    src: url('../fonts/ubuntu-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-bold-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-bold-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-bold-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu-bold-webfont.svg#ubuntubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ubuntu400';
+    src: url('../fonts/ubuntu-light-webfont.eot');
+    src: url('../fonts/ubuntu-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-light-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-light-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-light-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu-light-webfont.svg#ubuntulight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../fonts/ubuntu-medium-webfont.eot');
+    src: url('../fonts/ubuntu-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ubuntu-medium-webfont.woff2') format('woff2'),
+         url('../fonts/ubuntu-medium-webfont.woff') format('woff'),
+         url('../fonts/ubuntu-medium-webfont.ttf') format('truetype'),
+         url('../fonts/ubuntu-medium-webfont.svg#ubuntumedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+header {
+  padding-top: 91px;
+  background-color: $brand-primary;
+}
+
+.page-section {
+  padding: {
+    top: 50px;
+    bottom: 50px;
+  }
+  text-align: center;
+  background-color: $base-light;
+  &-features,
+  &-reviews{
+    text-align: left;
+  }
+  .media {
+    text-align: left;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  text-align: left;
+}
+
+.section {
+   & > .title-m{
+    margin: {
+      top: 0;
+      bottom: 50px;
+    }
+    text-transform: uppercase;
+    text-align: center;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .page-section {
+    padding: {
+      top: 100px;
+      bottom: 100px;
+    }
+  }
+}
+
+
+p {
+  .btn + .btn {
+    margin-top: 12px;
+  }
+  & > .btn-google,
+  & > .btn-apple {
+    width: 168px;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  p {
+    .btn + .btn {
+      margin-top: 0;
+      margin-left: 12px;
+
+  }
+}
+}
+
+
+footer {
+  .navbar-default {
+    background: $brand-primary-dark;
+    text-align: center;
+  }
+}
+
+
+//vertical align content
+
+@media (min-width: $screen-sm) {
+
+  .col-sm-6,
+  .col-md-6 {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+    }
+
+
+}

@@ -1,0 +1,40 @@
+.jumbotron {
+  margin-bottom: 0;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  .title-l {
+    margin-top: 0
+  }
+  .btn { width: 100%;}
+ .title-l,
+ p {
+   max-width: 520px;
+   margin: {
+     left: auto;
+     right: auto; 
+   }
+ }
+
+  }
+
+
+@media (min-width: $screen-sm) {
+  .jumbotron {
+  text-align: left;
+  .btn { width: 46%;}
+  p  .btn + .btn {margin-top: 0;
+  margin-left: 12px;}
+}
+}
+
+@media (min-width: $screen-md) {
+
+  .jumbotron {
+    padding-top: 50px;
+    padding-bottom: 50px;
+      .btn { width: 37%;}
+
+    }
+
+}

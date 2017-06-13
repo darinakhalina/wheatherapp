@@ -1,0 +1,5 @@
+.media-left,
+.media-right,
+.media-body {
+  display: block;
+  float: left; }

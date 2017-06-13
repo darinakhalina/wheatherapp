@@ -1,0 +1,24 @@
+.btn {
+  padding: 14px; }
+
+.btn-apple,
+.btn-google {
+  display: block;
+  width: 147px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.266em;
+  background-color: #353854;
+  border-color: #353854; }
+  .btn-apple small,
+  .btn-google small {
+    display: block;
+    font-size: 0.55em; }
+
+.btn-apple::before {
+  content: "";
+  display: inline-block;
+  background-image: url("../imgs/btn-apple.png");
+  height: 30px;
+  width: 30px;
+  float: left; }

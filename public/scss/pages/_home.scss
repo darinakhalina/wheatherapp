@@ -1,0 +1,195 @@
+.section-features {
+
+  .media {
+    margin-bottom: 20px;
+    .media-object {
+      margin: {
+        top: 7px;
+        right: 7px;
+      }
+    }
+
+    .media-body {
+      .title-s {
+        margin-top: 0;
+        text-transform: none;
+        color: $gray-dark;
+      }
+
+      p {
+        font-family: "ubuntu400";
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .section {
+     & > .title-m {
+       margin-bottom: 90px;
+     }
+   }
+}
+
+.section-screenshots {
+  .media {
+    margin-top: 44px;
+    .media-body {
+      overflow: visible;
+      font-family: "ubuntu400";
+    }
+
+    .clouds,
+    .rain,
+    .sun {
+      .icon-wheather {
+        margin: {
+          top: 25px;
+          bottom:15px;
+        }
+         &::after,
+        &::before,
+        span {
+          z-index: 2;
+          content: "";
+          position: relative;
+          left: -10px;
+          display: inline-block;
+          color: $light-primary;
+          font-family: "ubuntu";
+          text-align: center;
+          font-size: 0.9em;
+          line-height: 60px;
+          width: 60px;
+          height: 60px;
+          background-color: $base-light;
+          border: 1px solid $base-light;
+          border-radius: 50%;
+          box-shadow: 5px 3px 13px 0px transparentize($light-primary, 0.46);
+        }
+        &::after {
+          content: "Rainy";
+          left: -20px;
+          z-index: 1;
+        }
+
+        &::before {
+          content: "95\0025";
+          left: 0;
+          z-index: 3;
+        }
+      }
+    }
+  }
+
+  @media (min-width: $screen-sm) {
+    .icon-wheather {
+      margin-top: 35px;
+    }
+  }
+
+  .clouds::before {
+    content: url("../imgs/imgclouds.png");
+  }
+
+  .sun::before {
+    content: url("../imgs/imgsun.png");
+  }
+
+  .rain::before {
+    content: url("../imgs/imgrain.png");
+  }
+}
+
+.section-reviews {
+  .review {
+    .review-text {
+      font-size: 1.5em;
+    }
+    &::before {
+      content: open-quote;
+      display: block;
+      color: $brand-primary;
+      font-size: 6em;
+      margin: {
+        top: 0;
+        bottom: -67px;
+      }
+    }
+
+    &::after {
+      content: close-quote;
+      display: block;
+      float: right;
+      position: relative;
+      right: 7px;
+      top: 0;
+      color: $brand-primary;
+      font-size: 6em;
+      margin: {
+        top: -53px;
+        bottom: 0;
+      }
+    }
+  }
+  .row:first-of-type {
+    margin-top: -36px;
+  }
+  .row+.row {
+    margin-top: -90px;
+  }
+}
+
+@media (min-width: $screen-sm) {
+  .section-reviews {
+    .row+.row {
+      margin-top: -22px;
+    }
+  }
+}
+
+.page-section-download {
+  padding-bottom: 0;
+  background-color: $brand-primary;
+  color: $base-light;
+  font-family: "ubuntu400";
+  text-align: center;
+  .media {
+    text-align: center;
+    .title-m {
+      color: $base-light;
+      text-transform: uppercase;
+    }
+    p {margin-bottom: ($jumbotron-padding / 2);}
+  }
+
+}
+
+.page-section-download,
+.jumbotron {
+  .media-body {
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $screen-md) {
+  .page-section-download {
+      text-align: left;
+    .media {
+      overflow: visible;
+      text-align: left;
+      .title-m {
+      text-align: left;
+      }
+    .media-right {
+      img {
+        position: absolute;
+        bottom: 0;
+      }
+    }
+    .media-body {
+      padding-bottom: 100px;
+    }
+    }
+  }
+}

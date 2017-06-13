@@ -1,0 +1,5 @@
+https://bootsnipp.com/snippets/qAN1M - app store btn 
+https://bootsnipp.com/snippets/featured/store-icons - google play btn 
+fontello.com - download & link facebook, twitter and instagram icons only via @font-face
+
+https://www.fontsquirrel.com/tools/webfont-generator

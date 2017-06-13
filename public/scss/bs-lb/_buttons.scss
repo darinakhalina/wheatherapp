@@ -1,0 +1,52 @@
+.btn {
+  padding: 14px;
+  border-radius: $border-radius-large;
+}
+
+
+.btn-apple,
+.btn-google {
+  small {
+    display    : block;
+    font-size  : 0.55em;
+    font-family: "ubuntu400";
+  }
+  display         : block;
+  width           : 147px;
+  margin-left     : auto;
+  margin-right    : auto;
+  padding         : 6px 10px;
+  line-height     : 1.1;
+  font-size       : 1.266em;
+  color           : $base-light;
+  font-family     : "ubuntu";
+  background-color: $gray-base;
+  &:hover{
+    color: transparentize($base-light, .2);
+  }
+
+}
+.btn-apple::before,
+.btn-google::before {
+  content          : "";
+  float            : left;
+  display          : inline-block;
+  background-image : url("../imgs/btn-apple.png");
+  background-repeat: no-repeat;
+  height           : 28px;
+  width            : 33px;
+  margin-right     : -2px;
+  margin-top       : 2px;
+}
+.btn-apple::before {
+    margin-left: 6px;
+}
+.btn-google::before {
+  background-image: url("../imgs/btn-google.png");
+}
+@media (min-width: $screen-sm) {
+  .btn-apple,
+  .btn-google {
+    display: inline-block;
+  }
+}
